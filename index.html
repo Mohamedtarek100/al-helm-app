@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#F7F0E5" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="4uLife — a study & art companion for high-school students: every study session brings your dream closer." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="4uLife" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="application-name" content="4uLife" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="4uLife" />
+    <meta property="og:description" content="كل صفحة بتذاكريها، بتقرّبك من الحلم." />
+    <title>4uLife — Study & Art Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Applied before paint so the chosen theme never flashes.
+      (function () {
+        try {
+          var raw = localStorage.getItem('alhelm.v1.settings');
+          var saved = raw ? JSON.parse(raw) : {};
+          var theme = saved.theme || null;
+          var language = saved.language === 'ar' ? 'ar' : 'en';
+          document.documentElement.lang = language === 'ar' ? 'ar-EG' : 'en-US';
+          document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+          var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (theme === 'system' && systemDark)) {
+            document.documentElement.dataset.theme = 'dark';
+          }
+        } catch (e) {}
+      })();
+      // Static hosts without SPA rewrites (e.g. GitHub Pages) receive the
+      // redirect back as ?/route — restore it before the router boots.
+      (function () {
+        var q = window.location.search;
+        if (q.charAt(0) === '?' && q.charAt(1) === '/') {
+          var restored = q.charAt(2) === '/' ? q.slice(2) : q.slice(1);
+          var hash = window.location.hash ? window.location.hash.slice(1) : '';
+          window.history.replaceState(null, '', restored + hash);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-C5Wp2pHT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Riez5kB5.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
