@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.4",
-    "url":  "https://mohamedtarek100.github.io/al-helm-App/ota/1.0.4/bundle.zip",
-    "checksum":  "16cb9633cff97dc7812185900e3bca8290167a00edbd231b2f4f7929e3713016",
-    "message":  "Studio crash fix, canvas default tab, duplicate nav removed",
+    "version":  "1.0.5",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.5/bundle.zip",
+    "checksum":  "a6c6860bf767b4b8453592108fc999200507b61622ed81696baf68a7e6bc8dbb",
+    "message":  "Art Library: create, photo, import, metadata, search, favorites",
     "session_key":  "builtin"
 }
