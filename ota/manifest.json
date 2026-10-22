@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.5",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.5/bundle.zip",
-    "checksum":  "a6c6860bf767b4b8453592108fc999200507b61622ed81696baf68a7e6bc8dbb",
-    "message":  "Art Library: create, photo, import, metadata, search, favorites",
+    "version":  "1.0.6",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.6/bundle.zip",
+    "checksum":  "ebfd56833938c6ad23101cf61774e90772c16f8baba69c2a88eee318d53aadc0",
+    "message":  "Artwork cloud sync, schema alignment, local storage fix",
     "session_key":  "builtin"
 }
