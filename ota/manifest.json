@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.6",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.6/bundle.zip",
-    "checksum":  "ebfd56833938c6ad23101cf61774e90772c16f8baba69c2a88eee318d53aadc0",
-    "message":  "Artwork cloud sync, schema alignment, local storage fix",
+    "version":  "1.0.7",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.7/bundle.zip",
+    "checksum":  "08babbf2b250d6ed43b1b1079e6c6ce480e8385d53f1cd6aa5c8227eba4c00d7",
+    "message":  "Local image pipeline: IndexedDB-first saves, legacy migration, upload idempotency",
     "session_key":  "builtin"
 }
