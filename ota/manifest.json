@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.7",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.7/bundle.zip",
-    "checksum":  "08babbf2b250d6ed43b1b1079e6c6ce480e8385d53f1cd6aa5c8227eba4c00d7",
-    "message":  "Local image pipeline: IndexedDB-first saves, legacy migration, upload idempotency",
+    "version":  "1.0.8",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.8/bundle.zip",
+    "checksum":  "8e50b090de50302032a7d5cc4fbb87a6080e7b057501d493b3ae3f8d9d5d380f",
+    "message":  "Migration verification hardening, blob-first saves, surfaced storage errors",
     "session_key":  "builtin"
 }
