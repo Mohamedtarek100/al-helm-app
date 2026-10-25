@@ -1,1 +1,0 @@
-import{a as e,t}from"./index-2xC2P89q.js";var n=9e5,r=0,i=null;function a(e){return e-r>=n}async function o(n=Date.now()){if(!e||!a(n)||i)return!1;let{data:o,error:s}=await e.auth.getSession();return s||!o.session?!1:(r=n,i=t().then(()=>void 0).catch(()=>void 0).finally(()=>{i=null}),!0)}export{o as maybeHeartbeat};
