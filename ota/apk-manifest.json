@@ -1,8 +1,8 @@
 {
-    "version":  "1.4",
-    "versionCode":  5,
-    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.4-debug.apk",
-    "sha256":  "5c7857e00cd36cb37825743ba7f8b0f164b4b072bea8c5fb38051a2ba8dba345",
-    "notes":  "Exam save no longer blanks the app; Urgent priority enabled; Dream Studio shapes/text/selection/zoom; app lock; temporary Guest mode.",
-    "publishedAt":  "2026-10-29T00:41:14Z"
+    "version":  "1.5",
+    "versionCode":  6,
+    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5-debug.apk",
+    "sha256":  "423a7abbc7e673094b678c384aa22d479d51f75671b3d1af92841e97694c890a",
+    "notes":  "Critical fix: the app no longer shows a blank page at launch. Includes the exam-date fix, Urgent priority, Dream Studio tools, app lock and temporary Guest mode.",
+    "publishedAt":  "2026-10-29T01:36:56Z"
 }
