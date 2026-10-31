@@ -1,8 +1,8 @@
 {
-    "version":  "1.5.1",
-    "versionCode":  7,
-    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.1-debug.apk",
-    "sha256":  "877478b3bb40d59e067966f08071eb4768ba977935a22baccdeda9311279442b",
-    "notes":  "Fixes the Android white screen: the app now ships the current web build instead of a stale one. Includes the i18n provider fix, exam-date fix, Urgent priority, Dream Studio tools, app lock and temporary Guest mode.",
-    "publishedAt":  "2026-10-31T13:36:17Z"
+    "version":  "1.5.2",
+    "versionCode":  8,
+    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.2-debug.apk",
+    "sha256":  "36294f70fe1e80810cd88cb98aa0a2318b35433d9f221c88ecc81426c5b4ee79",
+    "notes":  "Fixes Android Google sign-in: the app now leaves the welcome screen and enters the app after a successful sign-in instead of showing a permanent loading spinner.",
+    "publishedAt":  "2026-10-31T14:57:49Z"
 }
