@@ -34,8 +34,8 @@ jobs:
       - name: Checkout application source
         uses: actions/checkout@v4
         with:
-          repository: ${{ env.SOURCE_REPOSITORY }}
-          ref: ${{ env.SOURCE_REF }}
+          repository: Mohamedtarek100/al-helm
+          ref: 7aa46d581fa6cdc8a75ce4236db6fb700f738995
           path: source
 
       - name: Set up Node.js
