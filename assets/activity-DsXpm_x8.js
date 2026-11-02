@@ -1,0 +1,1 @@
+import{a as e,o as t}from"./index-BiQSex9Y.js";var n=9e5,r=0,i=null;function a(e){return e-r>=n}async function o(n=Date.now()){if(!t||!a(n)||i)return!1;let{data:o,error:s}=await t.auth.getSession();return s||!o.session?!1:(r=n,i=e().then(()=>void 0).catch(()=>void 0).finally(()=>{i=null}),!0)}export{o as maybeHeartbeat};

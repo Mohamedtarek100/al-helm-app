@@ -1,8 +1,8 @@
-{
-  "version": "1.5.8",
-  "versionCode": 14,
-  "apkUrl": "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.8-release.apk",
-  "sha256": "9b3dd7536adf9e2ecb40129c999d2cdb749f6ea7b14d536711ae14c5cb8584fd",
-  "notes": "Alarms now ring audibly with bundled tones; tasks can no longer be reported as saved when they were not; deleted announcements stay deleted and no longer leak between accounts; the Admin console dialog is readable and usable; and the Dream Studio has a viewport-locked professional workspace with a real brush engine and layers.",
-  "publishedAt": "2026-11-02T21:02:25Z"
+﻿{
+    "version":  "1.5.9",
+    "versionCode":  15,
+    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.9-release.apk",
+    "sha256":  "a0ac3ee991cc0a9b91cf01089c5ab4170e7962fceeaa79d00df2933537d6a9f8",
+    "notes":  "Task persistence fixed at the root: an empty optional time is now stored as NULL instead of an empty string, which PostgreSQL rejected with SQLSTATE 22007 and which silently failed the whole cloud save. Locally saved tasks the server had not yet accepted are no longer discarded on restart.",
+    "publishedAt":  "2026-11-02T21:35:32Z"
 }

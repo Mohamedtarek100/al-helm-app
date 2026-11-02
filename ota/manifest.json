@@ -1,7 +1,8 @@
 {
-    "version":  "1.5.8",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.5.8/bundle.zip",
-    "checksum":  "521a8fb1699a45d19c2ed755fa1d896c16629dd5ecfe15332dff67dffbdc9ae6",
-    "message":  "Audible alarm tones, reliable task saving, notification dismissal that stays deleted, a fixed Admin console, and a professional Dream Studio",
+    "version":  "1.5.9",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.5.9/bundle.zip",
+    "checksum":  "f3984a8b77f058b7d82f984b4654e0e53f3f9fc1ca56ac59ba49006805d34e3d",
+    "message":  "Tasks save reliably (empty time stored as NULL), with no more lost edits after a restart",
     "session_key":  "builtin"
 }
+
