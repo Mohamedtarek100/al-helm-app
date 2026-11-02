@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "1.5.9",
-    "versionCode":  15,
-    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.9-release.apk",
-    "sha256":  "a0ac3ee991cc0a9b91cf01089c5ab4170e7962fceeaa79d00df2933537d6a9f8",
-    "notes":  "Task persistence fixed at the root: an empty optional time is now stored as NULL instead of an empty string, which PostgreSQL rejected with SQLSTATE 22007 and which silently failed the whole cloud save. Locally saved tasks the server had not yet accepted are no longer discarded on restart.",
-    "publishedAt":  "2026-11-02T21:35:32Z"
+    "version":  "1.5.10",
+    "versionCode":  16,
+    "apkUrl":  "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.10-release.apk",
+    "sha256":  "958c3036f15f781b289b9feb63d92c0f30bf0cb752d55df36bd4fbc69a9f138d",
+    "notes":  "Security: the app lock can no longer be bypassed through Forgot PIN, and it now protects a running app as well as a restart. Reliability: unsynced work is queued per account and replayed until the server confirms it, including deletions.",
+    "publishedAt":  "2026-11-02T23:38:50Z"
 }
