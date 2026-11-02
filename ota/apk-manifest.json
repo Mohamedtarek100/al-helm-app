@@ -1,8 +1,8 @@
 {
-    "version": "1.5.5",
-    "versionCode": 11,
-    "apkUrl": "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.5-release.apk",
-    "sha256": "8547e0458671556f8ebcf4f2456b8719bea7093b9684b08e5470d086e09cacc8",
-    "notes": "Admin Control Center repair (health status now reflects real checks), announcement recall, unread notification dot, instant theme switching, and a canvas-first Dream Studio layout.",
-    "publishedAt": "2026-11-01T00:00:00Z"
+  "version": "1.5.6",
+  "versionCode": 12,
+  "apkUrl": "https://mohamedtarek100.github.io/al-helm-app/downloads/4ulife-1.5.6-release.apk",
+  "sha256": "be6927c51cd9d2d98b9404acc08c35d9c9916aec854eb0ceb39b9e53222b8c80",
+  "notes": "Task persistence and guest-session reliability, Dream Studio drawing workflow improvements, reminder and notification error reporting, and admin announcement hardening.",
+  "publishedAt": "2026-11-02T00:00:00Z"
 }
