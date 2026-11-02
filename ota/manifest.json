@@ -1,7 +1,7 @@
 {
-    "version":  "1.0.9",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.0.9/bundle.zip",
-    "checksum":  "0e6157c173a650b439de8141df48195de402c4b1dce3b124afa09f16807ea7b5",
-    "message":  "Empty-cloud migration completion, blob-first saves, hardened verification",
+    "version":  "1.5.7",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.5.7/bundle.zip",
+    "checksum":  "745530f067dcaa2533997ee0150463a3a3c03f33b4d79bc08ebbb4d1c3fe5fa0",
+    "message":  "Durable guest persistence, cross-device announcement dismissal, and Dream Studio improvements",
     "session_key":  "builtin"
 }

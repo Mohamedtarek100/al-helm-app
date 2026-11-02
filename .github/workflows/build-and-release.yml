@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       source_ref:
-        description: Private source branch, tag, or commit to build
+        description: Source branch, tag, or commit to build
         required: false
         default: master
         type: string
@@ -23,8 +23,8 @@ concurrency:
 env:
   SOURCE_REPOSITORY: Mohamedtarek100/al-helm
   SOURCE_REF: ${{ github.event.inputs.source_ref || 'master' }}
-  RELEASE_TAG: v1.5.6-web
-  RELEASE_TITLE: 4uLife 1.5.6 — Web / PWA
+  RELEASE_TAG: v1.5.7
+  RELEASE_TITLE: 4uLife 1.5.7
 
 jobs:
   build-test-publish:
@@ -36,22 +36,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate private source checkout credentials
-        env:
-          SOURCE_REPO_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
-        run: |
-          if [ -z "$SOURCE_REPO_TOKEN" ]; then
-            echo "::error::Configure the SOURCE_REPO_TOKEN repository secret with read access to Mohamedtarek100/al-helm."
-            exit 1
-          fi
-
       - name: Checkout application source
         uses: actions/checkout@v4
         with:
           repository: Mohamedtarek100/al-helm
           ref: ${{ env.SOURCE_REF }}
           path: source
-          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN || github.token }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -116,9 +107,9 @@ jobs:
       - name: Package web release and checksum
         run: |
           cd source
-          zip -qr /tmp/4uLife-1.5.6-web-dist.zip dist
+          zip -qr /tmp/4uLife-1.5.7-web-dist.zip dist
           cd /tmp
-          sha256sum 4uLife-1.5.6-web-dist.zip > 4uLife-1.5.6-web-dist.zip.sha256
+          sha256sum 4uLife-1.5.7-web-dist.zip > 4uLife-1.5.7-web-dist.zip.sha256
 
       - name: Publish built site to al-helm-app main
         run: |
@@ -139,7 +130,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "The website bundle is already current."
           else
-            git commit -m "Publish 4uLife 1.5.6 Web/PWA"
+            git commit -m "Publish 4uLife 1.5.7 Web/PWA"
             git push origin main
           fi
 
@@ -150,14 +141,14 @@ jobs:
           DEPLOY_SHA="$(git rev-parse HEAD)"
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release upload "$RELEASE_TAG" \
-              /tmp/4uLife-1.5.6-web-dist.zip \
-              /tmp/4uLife-1.5.6-web-dist.zip.sha256 \
+              /tmp/4uLife-1.5.7-web-dist.zip \
+              /tmp/4uLife-1.5.7-web-dist.zip.sha256 \
               --clobber
           else
             gh release create "$RELEASE_TAG" \
-              /tmp/4uLife-1.5.6-web-dist.zip \
-              /tmp/4uLife-1.5.6-web-dist.zip.sha256 \
+              /tmp/4uLife-1.5.7-web-dist.zip \
+              /tmp/4uLife-1.5.7-web-dist.zip.sha256 \
               --target "$DEPLOY_SHA" \
               --title "$RELEASE_TITLE" \
-              --notes "4uLife 1.5.6 Web/PWA release. The production website is deployed to https://mohamedtarek100.github.io/al-helm-app/. This release contains the web build bundle and SHA-256 checksum. Historical APK downloads and OTA assets were preserved unchanged. No Android APK is included in this web-only release."
+              --notes "4uLife 1.5.7 release. The production website is deployed to https://mohamedtarek100.github.io/al-helm-app/. This release includes the web build bundle and its SHA-256 checksum. The signed Android APK, checksum, and OTA bundle are published with the release."
           fi
