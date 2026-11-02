@@ -1,7 +1,7 @@
 {
-    "version":  "1.5.7",
-    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.5.7/bundle.zip",
-    "checksum":  "745530f067dcaa2533997ee0150463a3a3c03f33b4d79bc08ebbb4d1c3fe5fa0",
-    "message":  "Durable guest persistence, cross-device announcement dismissal, and Dream Studio improvements",
+    "version":  "1.5.8",
+    "url":  "https://mohamedtarek100.github.io/al-helm-app/ota/1.5.8/bundle.zip",
+    "checksum":  "521a8fb1699a45d19c2ed755fa1d896c16629dd5ecfe15332dff67dffbdc9ae6",
+    "message":  "Audible alarm tones, reliable task saving, notification dismissal that stays deleted, a fixed Admin console, and a professional Dream Studio",
     "session_key":  "builtin"
 }
